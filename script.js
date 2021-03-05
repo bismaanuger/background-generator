@@ -5,15 +5,15 @@ let body = document.querySelector("body");
 let randomBtn = document.querySelector(".random");
 
 const setGradient = () => {
-    body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
+	body.style.background = `linear-gradient(to right, ${color1.value}, ${color2.value})`;
 
-    css.textContent = body.style.background;
+	css.textContent = body.style.background;
 };
 
 const randomColor = () => {
-    color1.value = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    color2.value = "#" + Math.floor(Math.random() * 16777215).toString(16);
-    setGradient();
+	color1.value = "#" + Math.floor(Math.random() * 16777215).toString(16);
+	color2.value = "#" + Math.floor(Math.random() * 16777215).toString(16);
+	setGradient();
 };
 
 randomBtn.addEventListener("click", randomColor);
