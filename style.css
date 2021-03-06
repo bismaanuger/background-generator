@@ -5,7 +5,11 @@ body {
 	text-transform: uppercase;
 	letter-spacing: 0.5em;
 	top: 15%;
-	background: linear-gradient(to right, red, yellow); /* Standard syntax */
+	background: linear-gradient(
+		to right,
+		rgb(0, 177, 74),
+		red
+	); /* Standard syntax */
 }
 
 button {
